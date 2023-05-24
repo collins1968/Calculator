@@ -6,6 +6,11 @@
     outline: none;
     border: none;
     margin-bottom: 15px;
+    color: #fff;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 10px;
 }
 
 
