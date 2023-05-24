@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-    <h1>My calculator</h1>
-    <Calc />
+
+      <Calc />
 
     </>
   )
