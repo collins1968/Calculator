@@ -4,22 +4,21 @@ function Header() {
   return (
     
     <header>
-        <h3>Calc</h3>
-        <div>
-            <h4>Theme</h4>
-            <label>
-              <input type="radio" name="Theme" value="1"/> 1
-            </label>
-
-            <label>
-              <input type="radio" name="Theme" value="2"/>2
-            </label>
-            <label>
-              <input type="radio" name="Theme" value="3"/> 3
-            </label>
-            
-           
-
+     <div className="calc">
+     <h4>calc</h4>
+        </div>
+        <div className="left">
+        <div className="theme">Theme</div>
+        <div className="numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        </div>
+        <div className="buttons">
+        <input type="radio"/>
+        <input type="radio"/>
+        <input type="radio"/>
+        </div>
         </div>
     </header>
   )
