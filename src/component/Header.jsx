@@ -1,27 +1,15 @@
-
+import ColorThemeToggle from "./ColorThemeToggle"
+import './Header.css'
 
 function Header() {
   return (
-    
-    <header>
-        <h3>Calc</h3>
-        <div>
-            <h4>Theme</h4>
-            <label>
-              <input type="radio" name="Theme" value="1"/> 1
-            </label>
-
-            <label>
-              <input type="radio" name="Theme" value="2"/>2
-            </label>
-            <label>
-              <input type="radio" name="Theme" value="3"/> 3
-            </label>
-            
-           
-
-        </div>
-    </header>
+    <div className="header">
+      <h3 className="calc">Calc</h3>
+      <div className="toggle-container">
+        <h4 className="toggle-container-themes">Theme</h4>
+        <ColorThemeToggle />
+      </div>
+    </div>
   )
 }
 
