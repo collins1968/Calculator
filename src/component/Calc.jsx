@@ -1,5 +1,27 @@
+import { useState } from "react";
 
 function Calc() {
+  const [result, setResult] = useState('');
+
+  const handleClick = (e) => {
+    setResult(result.concat(e.target.name));
+  };
+
+  const handleClear = () => {
+    setResult('');
+  };
+
+  const handleDelete = () => {
+    setResult(result.slice(0, -1));
+  };
+
+  const handleCalculate = () => {
+    try {
+      setResult(eval(result).toString());
+    } catch (error) {
+      setResult('Error');
+    }
+  };
     return (
         <div className="calculator">
           <input type="text" value={result} />
@@ -8,7 +30,7 @@ function Calc() {
             <button name="7" onClick={handleClick}>7</button>
             <button name="8" onClick={handleClick}>8</button>
             <button name="9" onClick={handleClick}>9</button>
-            <button className="delete" onClick={handleClick}>DEL</button>
+            <button className="delete" onClick={handleDelete}>DEL</button>
 
             <button name="4" onClick={handleClick}>4</button>
             <button name="5" onClick={handleClick}>5</button>
@@ -26,7 +48,7 @@ function Calc() {
             <button name="*" onClick={handleClick}>x</button>
 
             <button className="reset" name="C" onClick={handleClear}>RESET</button>
-            <button className="calculate" onClick={handleCalculate}> =</button>
+            <button className="calculate" onClick={handleCalculate}> = </button>
         </div>
     </div>
       )
