@@ -1,15 +1,16 @@
+
 import './App.css'
 import Header from './Component/Header'
-import Calc from './component/Calc'
+import Calc from './Component/Calc'
+
 function App() {
 
   return (
-    <>
+    <div className='calculator-app'>
+     <Header />
+     <Calc />
+    </div>
 
-      <Header />
-      <Calc />
-
-    </>
   )
 }
 

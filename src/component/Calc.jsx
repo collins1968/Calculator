@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Calc.css';
 
 function Calc() {
   const [result, setResult] = useState('');
@@ -24,9 +25,10 @@ function Calc() {
   };
     return (
         <div className="calculator">
-          <input type="text" value={result} />
+          <input type="text" value={result} className="input-field"/>
     
-          <div className="keypad">
+          <div className="calculator-keypad">
+            
             <button name="7" onClick={handleClick}>7</button>
             <button name="8" onClick={handleClick}>8</button>
             <button name="9" onClick={handleClick}>9</button>
