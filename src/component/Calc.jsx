@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 import './Calc.css';
 
 function Calc() {
   const [result, setResult] = useState('');
-
+ 
   const handleClick = (e) => {
     setResult(result.concat(e.target.name));
   };
