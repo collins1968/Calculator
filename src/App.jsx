@@ -1,7 +1,7 @@
-
 import './App.css'
-import Header from './component/Header'
-import Calc from './component/Calc'
+import Header from './Component/Header'
+import Calc from './Component/Calc'
+
 
 function App() {
 
